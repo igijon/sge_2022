@@ -8,7 +8,7 @@ print(a is b) #false
 tipo, x, y, z, activo = 'Punto1', 10, 10, 10, True
 
 #Visualización de valores
-print("Tipo: ", tipo, "Pos: ", x, y, z, " Activo: ", activo)
+print("Tipo:", tipo, "Pos:", x, y, z, "Activo:", activo)
 
 #Asignación múltiple con una tupla
 tupla_punto = ('Punto2', 11, 11, 11, False)

@@ -9,7 +9,7 @@ print("El producto %s cantidad=%d precio=%.2f"%("cesta",23,13.456))
 print(1,2,3)
 print(1,2,3,sep='-')
 print(1,2,3,sep='-',end='.\n')
-print('hola'*3)
+print("hola"*3)
 
 num1=input("Dame el número 1: ")
 print(type(num1))

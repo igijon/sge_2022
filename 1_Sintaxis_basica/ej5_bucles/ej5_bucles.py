@@ -24,7 +24,8 @@ utilizando la función zip. Esta función crea una secuencia donde cada
 elemento es una tupla de los elementos de cada secuencia que
 toma como parámetro"""
 
-list(zip(range(1,4),["ana", "juan", "pepe"]))
+lista_combinada = list(zip(range(1,4),["ana", "juan", "pepe"]))
+print(lista_combinada)
 
 for x,y in zip(range(1,4),["ana","juan","pepe"]):
     print(x,y)
