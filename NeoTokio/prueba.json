@@ -1,2 +1,1 @@
-{"patrulla": "1", "delincuente": [{"id": "d1", "nombre": "d1", "delito":
-["robar"]}, {"id": "d2", "nombre": "d2", "delito": ["saltar", "correr"]}]}
+{"patrulla": "12", "delincuente": [{"id": "1", "nombre": "D1", "delito": ["Robar", "Robar2"]}, {"id": "D2", "nombre": "D2", "delito": ["Robar"]}, {"id": "3", "nombre": "D3", "delito": ["Robar"]}]}

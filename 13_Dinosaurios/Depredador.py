@@ -23,7 +23,7 @@ class Depredador(Dinosaurio):
         else:
             self.desplazar(abs(distancia), DIR_DCHA)
         # Gastamos la energía del ataque
-        self.energia -= 20
+        self.energia -= ENERGIA_ATACAR
 
         #La presa recibe el ataque
         presa.recibir_ataque(self)
