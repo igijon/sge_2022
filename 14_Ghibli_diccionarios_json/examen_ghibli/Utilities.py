@@ -112,7 +112,7 @@ def json_to_studio(dictionary):
     except Exception as err:
         print(err)
 
-def search_film_studio_dict(studio_id, studio_dict, **kwargs):
+def search_film_studio_dict(studio_id, studio_dict, **kwargs): #search("Ghibli", studio_dict, release_year=1998, director="Takao")
     resultadosBusqueda = []
     films_dict = studio_dict[studio_id]["films"]
     if "title" in kwargs.keys() and kwargs["title"]!="":
@@ -123,8 +123,8 @@ def search_film_studio_dict(studio_id, studio_dict, **kwargs):
     else:
         # si no viene el título puede que busquen por release_year o director
         film_buscado = True
-        for title, film_dict in films_dict.items():
-            for name, value in kwargs.items():
+        for title, film_dict in films_dict.items(): #Recorro cada película
+            for name, value in kwargs.items(): #Recorro los kwargs, en este caso release_year y director
                 if film_buscado and value != "" and film_dict[name] != value: film_buscado = False
             if film_buscado:
                 resultadosBusqueda.append({title: film_dict})
